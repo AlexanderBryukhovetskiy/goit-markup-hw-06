@@ -325,26 +325,27 @@ header {
 }
 
 .hero-btn {
-    min-width: 160px;
+    min-width: 200px;
     border: none;
     border-radius: 4px;
     background-color: var(--accent-color);
 
-    /*padding: 10px 32px;*/
+    /*padding: 10px;*/
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 10px;
+    padding-left: 10px;
 
-    /*margin: 0 4px 0 0;*/
+    /*margin: 0 auto;*/
     margin-top: 0;
-    margin-bottom: 4px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     color: var(--main-light);
     /*text-align: center;   - видаляємо та переносимо на всю секцію*/
 
@@ -712,12 +713,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-soc-link-block {
     padding-top: 12px;
     margin-left: 70px;
+    margin-right: 93px;
 }
 
 .footer-title {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 16px;
+    text-transform: uppercase;
     color: var(--main-light);
 }
 
@@ -741,6 +744,60 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-color);
+}
+
+/*форма підписки у футері*/
+
+.subscribe-form {
+    margin-top: 12px;
+}
+
+.footer-input{
+    min-width: 358px;
+    margin-right: 12px;
+    padding: 14px 16px;
+   
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+    box-sizing: border-box;
+    min-width: 200px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.footer-subscribe-icon {
+    display: inline-block;
+    vertical-align: middle; 
+    fill: currentColor;
 }
 
 
