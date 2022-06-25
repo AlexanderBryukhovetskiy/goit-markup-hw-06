@@ -69,7 +69,7 @@
 
                     <button class="hero-btn" type="button" data-modal-open> Заказать услугу</button>
 
-                    <div class="backdrop" data-modal>                         <!--           <div class="backdrop is-hidden" data-modal>       !!!!!!!!!!!!!--> 
+                    <div class="backdrop is-hidden" data-modal> 
                        
                         <div class="modal"> 
                             
@@ -86,7 +86,8 @@
                                     <label for="name" class="form-label">Имя</label>
 
                                     <div class="input-icon-container">
-                                        <input type="text" 
+                                        <input  type="text"
+                                                name="name" 
                                                 id="name" 
                                                 class="form-input"
                                                 placeholder=" ">
@@ -95,14 +96,14 @@
                                             <use href="./images/icons.svg#icon-modal-name"></use>
                                         </svg>
                                     </div>
-
                                 </div>
 
                                 <div class="form-field">
                                     <label for="tel" class="form-label">Телефон</label>
 
                                     <div class="input-icon-container">
-                                        <input type="tel" 
+                                        <input  type="tel"
+                                                name="tel" 
                                                 id="tel" 
                                                 class="form-input"
                                                 placeholder=" ">
@@ -111,14 +112,14 @@
                                             <use href="./images/icons.svg#modal-phone-icon"></use>
                                         </svg>
                                     </div>
-
                                 </div>
 
                                 <div class="form-field">
-                                    <label for="tel" class="form-label">Почта</label>
+                                    <label for="email" class="form-label">Почта</label>
 
                                     <div class="input-icon-container">
-                                        <input type="email" 
+                                        <input  type="email"
+                                                name="email"
                                                 id="email" 
                                                 class="form-input"
                                                 placeholder=" ">
@@ -127,33 +128,34 @@
                                             <use href="./images/icons.svg#modal-email-icon"></use>
                                         </svg>
                                     </div>
-
                                 </div>
 
                                 <div class="form-field">
                                     <label for="comment" class="form-label">Комментарий</label>
 
-                                    <textarea   id="comment"
-                                                name="comment"                                                 
-                                                class="textarea-input"
+                                    <textarea   name="comment"
+                                                id="comment"                                                 
+                                                class="comment"
                                                 rows="5"
-                                                placeholder="Введите текст">
-                                    </textarea>
+                                                placeholder="Введите текст"
+                                    ></textarea>
                                 </div>
 
+                                <label class="checkbox-label">
+                                    <input  type="checkbox"
+                                            name="agreement" 
+                                            class="checkbox">
 
-                                   
+                                    <svg class="checkbox-icon" width="16" height="15">
+                                        <use href="./images/icons.svg#checkbox-icon"></use>
+                                    </svg>
+                                    Соглашаюсь с рассылкой и принимаю
+                                    <a href="" class="checkbox-link">Условия договора</a>
+                                </label>
+
+                                <button type="submit" class="submit-btn">Отправить</button>
 
                             </form>
-
-
-
-
-
-
-
-
-
 
                         </div>
                     </div>
@@ -562,19 +564,21 @@
                 </ul>
             </div>
 
-            <div class="subscribe-form">
-
+            <form class="subscribe-form">
                 <label class="footer-subscribe">Подпишитесь на рассылку</label>
 
-                <input type="email" class="footer-input" name="subscribe-email" placeholder="E-mail">
+                <input  type="email" 
+                        name="subscribe-email" 
+                        class="footer-input" 
+                        placeholder="E-mail">
 
-                <button type="submit" class="footer-btn">Подписаться
+                <button type="submit" class="footer-btn">
+                    Подписаться
                     <svg class="footer-subscribe-icon" width="24" height="24">
                         <use href="./images/icons.svg#subscribe-icon"></use>
                     </svg>
                 </button>
-
-            </div>
+            </form>
             
         </div>
     </footer>
