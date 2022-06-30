@@ -494,7 +494,7 @@ header {
     fill: rgba(33, 150, 243, 1);
 }
 
-.form-input:focus:not(:placelder-shown)  {
+.form-input:focus:not(:placeholder-shown)  {
     border-color: rgba(33, 150, 243, 1);
     outline: transparent;
 }
@@ -526,7 +526,7 @@ header {
     outline: transparent;
 }
 
-.comment:focus:not(:placelder-shown) {
+.comment:focus:not(:placeholder-shown) {
     border-color: rgba(33, 150, 243, 1);
     outline: transparent;
 }
@@ -669,12 +669,12 @@ header {
 
 /*оформлення секції info*/
 .info {
+    display: block;
     padding-bottom: 94px;
 }
 
 .info-list {
     display: flex;
-    
 }
 
 .info-list .info-item + .info-item {
@@ -684,10 +684,6 @@ header {
 .info-item {
     position: relative;
 }
-.info {
-    display: block;
-} 
-
 
 .info-title {
     position:absolute;
